@@ -12,4 +12,9 @@ public class SampleTest {
 		System.out.println("Hello all...");
 		return "I am great";
 	}
+	
+	@RequestMapping(method = RequestMethod.GET, params = "/leader")
+	public String helloAll() {
+		return "Am your leader";
+	}
 }
